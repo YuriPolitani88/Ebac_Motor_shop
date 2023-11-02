@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #eeeeee;
+}
+
+header{
+    padding: 16px 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+h2 {
+    border-bottom: 2px solid #a8a8a8;
+}
+
+h2 {
+    width: 100%;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container,
+.container_1{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container, 
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section .about p {
+    font-size: 1.5em;
+}
+
+img{
+    width: 50%;
+    margin-right: 32px;
+}
+
+section{
+    padding: 48px 0 ;
+}
+
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.list-products li {
+    max-width: 30%;
+    list-style: none;
+}
+
+.list-products li h3 {
+    margin: 16px 0;
+}
+
+.list-products img {
+    width: 400px;
+    max-width: 100%;
+}
+
+.list-products button {
+    display: block;
+    width: 80%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(86, 163, 9);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    margin-left: 10%;
+}
+
+.list-products button:hover {
+    background-color: chartreuse;
+
+}
+
+
+.list-products strong {
+    display: block;
+    margin: 16px 0 ;
+}
+
+.list-products h3,
+.list-products p, strong {
+    text-align: center;
+}
+
+.list-products p{
+    font-style: oblique;
+    
+}
+
+.list-products h3{
+    font-weight: bold;
+}
+
+h2{
+    font-size: 40px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .container,
+    .container_1 {
+        display: block;
+    }
+    .container 
+    .container_1{
+        max-width: 90%;
+    }
+
+    header .container, 
+    section .container {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    section .about{
+        font-size: 0.8em;
+        width: 100%;
+    }  
+    .container img{
+        width: 100%;
+    }
+
+
+    .list-products li {
+        max-width: 100%;
+        margin-bottom: 5%;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    .container li  {
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 641px)and(max-width: 1023px) {
+
+    .container,
+    .container_1{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .list-products {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+
+    
